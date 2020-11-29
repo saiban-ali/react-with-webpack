@@ -4,12 +4,13 @@
   "description": "react setup with webpack",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config config/webpack.prod.js",
-    "start": "webpack serve --config config/webpack.dev.js"
+    "build": "webpack --env ENVIRONMENT=production --config config/webpack.prod.js",
+    "start": "webpack serve --env ENVIRONMENT=development --config config/webpack.dev.js"
   },
   "author": "Saiban Ali",
   "license": "MIT",
   "dependencies": {
+    "dotenv-flow": "^3.2.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
